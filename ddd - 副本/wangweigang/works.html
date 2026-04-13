@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作品 | 王伟刚</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-back">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                <span>团队主页</span>
+            </a>
+            <a href="index.html" class="nav-member">王伟刚</a>
+            <div class="mobile-menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html">关于我</a></li>
+                <li><a href="works.html" class="active">作品</a></li>
+                <li><a href="contact.html">联系</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="section" style="padding-top: calc(var(--space-xl) + 80px);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Portfolio</span>
+                <h2 class="section-title">精选作品</h2>
+                <p class="section-desc">从App界面到品牌系统，每个项目都是视觉与功能的平衡。</p>
+            </div>
+
+            <div class="works-grid">
+                <article class="work-item">
+                    <div class="work-image">📱</div>
+                    <div class="work-overlay">
+                        <span class="work-category">App设计</span>
+                        <h3 class="work-title">健身追踪App</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-secondary);">完整的UI/UX设计，包含100+页面，获得App Store推荐。</p>
+                    </div>
+                </article>
+
+                <article class="work-item">
+                    <div class="work-image">🌐</div>
+                    <div class="work-overlay">
+                        <span class="work-category">Web设计</span>
+                        <h3 class="work-title">SaaS管理后台</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-secondary);">企业级后台系统设计，建立完整的设计规范与组件库。</p>
+                    </div>
+                </article>
+
+                <article class="work-item">
+                    <div class="work-image">🎨</div>
+                    <div class="work-overlay">
+                        <span class="work-category">品牌设计</span>
+                        <h3 class="work-title">科技公司品牌</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-secondary);">从Logo到VI完整品牌设计，塑造专业可信的品牌形象。</p>
+                    </div>
+                </article>
+
+                <article class="work-item">
+                    <div class="work-image">🛒</div>
+                    <div class="work-overlay">
+                        <span class="work-category">电商设计</span>
+                        <h3 class="work-title">奢侈品电商</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-secondary);">高端电商界面设计，强调品质感与沉浸式购物体验。</p>
+                    </div>
+                </article>
+
+                <article class="work-item">
+                    <div class="work-image">🎬</div>
+                    <div class="work-overlay">
+                        <span class="work-category">动效设计</span>
+                        <h3 class="work-title">App交互动效</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-secondary);">制作50+界面转场动效，提升产品质感与用户满意度。</p>
+                    </div>
+                </article>
+
+                <article class="work-item">
+                    <div class="work-image">📊</div>
+                    <div class="work-overlay">
+                        <span class="work-category">数据可视化</span>
+                        <h3 class="work-title">数据大屏设计</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-secondary);">科技感数据大屏界面，平衡信息密度与视觉美感。</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© 2024 王伟刚 | <a href="../index.html" style="color: var(--accent-primary);">返回团队主页</a></p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('navLinks').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

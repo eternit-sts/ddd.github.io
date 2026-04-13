@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我 | 李豪健</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-back">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                <span>团队主页</span>
+            </a>
+            <a href="index.html" class="nav-member">李豪健</a>
+            <div class="mobile-menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html" class="active">关于我</a></li>
+                <li><a href="works.html">作品</a></li>
+                <li><a href="contact.html">联系</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="about-grid">
+            <aside class="about-image">
+                <div class="about-image-placeholder">
+                    🎯
+                </div>
+                <div style="margin-top: 2rem; text-align: center;">
+                    <h3 style="margin-bottom: 0.5rem;">李豪健</h3>
+                    <p style="color: var(--accent-primary); font-size: 0.9rem;">产品经理 / 用户体验设计师</p>
+                    <p style="font-size: 0.875rem; margin-top: 1rem;">坐标：上海</p>
+                    <a href="../index.html" style="display: inline-block; margin-top: 1.5rem; padding: 0.5rem 1rem; border: 1px solid var(--accent-primary); color: var(--accent-primary); border-radius: 20px; font-size: 0.875rem; text-decoration: none;">← 返回团队主页</a>
+                </div>
+            </aside>
+
+            <div>
+                <section style="margin-bottom: 4rem;">
+                    <span class="section-label">About Me</span>
+                    <h2 style="margin-bottom: 1.5rem;">经历与故事</h2>
+                    <p style="margin-bottom: 1.5rem;">
+                        我是一名充满好奇心和同理心的产品经理。心理学背景让我对用户行为有独特的洞察，而技术理解力让我能与开发团队高效协作。
+                    </p>
+                    <p>
+                        我相信数据与直觉的结合能创造最好的产品。每一个功能背后都应该有用户价值的支撑，每一次迭代都应该有数据验证的支撑。
+                    </p>
+                </section>
+
+                <section style="margin-bottom: 4rem;">
+                    <span class="section-label">Timeline</span>
+                    <h3 style="margin-bottom: 2rem;">职业历程</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2022 - 至今</div>
+                            <h4 style="font-size: 1.25rem; margin-bottom: 0.5rem;">高级产品经理</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem;">负责核心产品线的规划与迭代，DAU从100万增长至500万。</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2020 - 2022</div>
+                            <h4 style="font-size: 1.25rem; margin-bottom: 0.5rem;">产品经理</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem;">主导多个功能模块从概念到上线的全过程，积累完整产品经验。</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2018 - 2020</div>
+                            <h4 style="font-size: 1.25rem; margin-bottom: 0.5rem;">产品专员</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem;">参与用户调研与需求文档撰写，快速学习产品方法论。</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2014 - 2018</div>
+                            <h4 style="font-size: 1.25rem; margin-bottom: 0.5rem;">心理学 · 本科</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem;">系统学习用户心理与行为分析，为产品工作打下理论基础。</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <span class="section-label">Values</span>
+                    <h3 style="margin-bottom: 2rem;">我的价值观</h3>
+                    <div class="values-grid">
+                        <div class="value-card">
+                            <div class="value-number">01</div>
+                            <h4>用户至上</h4>
+                            <p style="font-size: 0.9rem;">每一个决策都要回到用户价值，解决真实痛点比功能堆砌更重要。</p>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-number">02</div>
+                            <h4>数据驱动</h4>
+                            <p style="font-size: 0.9rem;">直觉是起点，数据是验证。用A/B测试和数据说话，减少主观臆断。</p>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-number">03</div>
+                            <h4>快速迭代</h4>
+                            <p style="font-size: 0.9rem;">完美是迭代的敌人，小步快跑、快速验证，持续优化产品体验。</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© 2024 李豪健 | <a href="../index.html" style="color: var(--accent-primary);">返回团队主页</a></p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('navLinks').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

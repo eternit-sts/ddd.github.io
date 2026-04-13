@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系 | 李豪健</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-back">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                <span>团队主页</span>
+            </a>
+            <a href="index.html" class="nav-member">李豪健</a>
+            <div class="mobile-menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html">关于我</a></li>
+                <li><a href="works.html">作品</a></li>
+                <li><a href="contact.html" class="active">联系</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="contact-grid">
+            <div>
+                <span class="section-label">Get In Touch</span>
+                <h2 style="margin-bottom: 1.5rem;">让我们开始对话</h2>
+                <p style="margin-bottom: 3rem;">
+                    无论是产品咨询、行业交流，还是职业机会，我都期待与你探讨。欢迎通过以下方式联系我。
+                </p>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div class="contact-details">
+                        <h4>邮箱</h4>
+                        <p>lihaojian@example.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <div class="contact-details">
+                        <h4>电话</h4>
+                        <p>+86 139 0000 0000</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div class="contact-details">
+                        <h4>位置</h4>
+                        <p>上海市浦东新区</p>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 3rem; margin-bottom: 1.5rem;">关注我</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link" title="GitHub">GH</a>
+                    <a href="#" class="social-link" title="LinkedIn">in</a>
+                    <a href="#" class="social-link" title="Twitter">X</a>
+                    <a href="#" class="social-link" title="微信">We</a>
+                </div>
+
+                <a href="../index.html" style="display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 2rem; padding: 0.75rem 1.5rem; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; color: var(--text-secondary); text-decoration: none; font-size: 0.875rem; transition: all 0.3s ease;">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    返回团队主页
+                </a>
+            </div>
+
+            <div class="contact-form">
+                <h3 style="margin-bottom: 2rem;">发送消息</h3>
+                <form onsubmit="event.preventDefault(); alert('消息已发送！');">
+                    <div class="form-group">
+                        <label class="form-label">姓名</label>
+                        <input type="text" class="form-input" placeholder="你的名字" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">邮箱</label>
+                        <input type="email" class="form-input" placeholder="your@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">主题</label>
+                        <input type="text" class="form-input" placeholder="消息主题">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">内容</label>
+                        <textarea class="form-textarea" placeholder="你想说什么..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn">
+                        发送消息 <span style="margin-left: 8px;">→</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© 2024 李豪健 | <a href="../index.html" style="color: var(--accent-primary);">返回团队主页</a></p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('navLinks').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

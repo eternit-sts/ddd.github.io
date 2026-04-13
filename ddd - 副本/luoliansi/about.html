@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我 | 罗练思</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-back">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                <span>团队主页</span>
+            </a>
+            <a href="index.html" class="nav-member">罗练思</a>
+            <div class="mobile-menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html" class="active">关于我</a></li>
+                <li><a href="works.html">作品</a></li>
+                <li><a href="contact.html">联系</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="about-grid">
+            <aside class="about-image">
+                <div class="about-image-placeholder">
+                    👨‍💼
+                </div>
+                <div style="margin-top: 2rem; text-align: center;">
+                    <h3 style="margin-bottom: 0.5rem;">罗练思</h3>
+                    <p style="color: var(--accent-primary); font-size: 0.9rem;">项目经理 / 全栈开发者</p>
+                    <p style="font-size: 0.875rem; margin-top: 1rem;">坐标：北京</p>
+                    <a href="../index.html" style="display: inline-block; margin-top: 1.5rem; padding: 0.5rem 1rem; border: 1px solid var(--accent-primary); color: var(--accent-primary); border-radius: 20px; font-size: 0.875rem; text-decoration: none;">← 返回团队主页</a>
+                </div>
+            </aside>
+
+            <div>
+                <section style="margin-bottom: 4rem;">
+                    <span class="section-label">About Me</span>
+                    <h2 style="margin-bottom: 1.5rem;">经历与故事</h2>
+                    <p style="margin-bottom: 1.5rem;">
+                        我是一名充满热情的项目经理和技术爱好者。从写第一行代码开始，我就被技术的魅力所吸引。随着经验的积累，我发现自己更擅长统筹全局、协调资源，于是逐渐转向项目管理方向。
+                    </p>
+                    <p>
+                        但我从未放弃对技术的热爱，始终保持全栈开发的能力。这让我能够深入理解技术团队的工作，做出更合理的决策，也成为技术与业务之间的桥梁。
+                    </p>
+                </section>
+
+                <section style="margin-bottom: 4rem;">
+                    <span class="section-label">Timeline</span>
+                    <h3 style="margin-bottom: 2rem;">职业历程</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2023 - 至今</div>
+                            <h4 style="font-size: 1.25rem; margin-bottom: 0.5rem;">高级项目经理</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem;">负责多个大型Web项目的全生命周期管理，带领10+人技术团队。</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2021 - 2023</div>
+                            <h4 style="font-size: 1.25rem; margin-bottom: 0.5rem;">全栈开发工程师</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem;">参与电商平台开发，负责前后端架构设计与核心模块开发。</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2019 - 2021</div>
+                            <h4 style="font-size: 1.25rem; margin-bottom: 0.5rem;">前端开发工程师</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem;">专注于React生态，开发企业级管理系统，积累扎实的技术基础。</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2015 - 2019</div>
+                            <h4 style="font-size: 1.25rem; margin-bottom: 0.5rem;">计算机科学与技术 · 本科</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem;">系统学习计算机基础，参与多个校园创业项目。</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <span class="section-label">Values</span>
+                    <h3 style="margin-bottom: 2rem;">我的价值观</h3>
+                    <div class="values-grid">
+                        <div class="value-card">
+                            <div class="value-number">01</div>
+                            <h4>以人为本</h4>
+                            <p style="font-size: 0.9rem;">技术是为人服务的，好的产品是技术与用户体验的完美平衡。</p>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-number">02</div>
+                            <h4>持续学习</h4>
+                            <p style="font-size: 0.9rem;">技术日新月异，保持好奇心和学习能力是立足之本。</p>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-number">03</div>
+                            <h4>协作共赢</h4>
+                            <p style="font-size: 0.9rem;">一个人的力量有限，优秀的团队协作能创造1+1>2的价值。</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© 2024 罗练思 | <a href="../index.html" style="color: var(--accent-primary);">返回团队主页</a></p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('navLinks').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作品 | 罗练思</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-back">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                <span>团队主页</span>
+            </a>
+            <a href="index.html" class="nav-member">罗练思</a>
+            <div class="mobile-menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html">关于我</a></li>
+                <li><a href="works.html" class="active">作品</a></li>
+                <li><a href="contact.html">联系</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="section" style="padding-top: calc(var(--space-xl) + 80px);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Portfolio</span>
+                <h2 class="section-title">精选作品</h2>
+                <p class="section-desc">从项目管理到技术实现，每个项目都是一次全新的挑战与成长。</p>
+            </div>
+
+            <div class="works-grid">
+                <article class="work-item">
+                    <div class="work-image">🛒</div>
+                    <div class="work-overlay">
+                        <span class="work-category">项目管理</span>
+                        <h3 class="work-title">电商平台重构</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-secondary);">带领团队完成大型电商平台技术重构，提升性能40%。</p>
+                    </div>
+                </article>
+
+                <article class="work-item">
+                    <div class="work-image">📱</div>
+                    <div class="work-overlay">
+                        <span class="work-category">全栈开发</span>
+                        <h3 class="work-title">企业协作APP</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-secondary);">从0到1打造的企业级移动办公应用，服务10万+用户。</p>
+                    </div>
+                </article>
+
+                <article class="work-item">
+                    <div class="work-image">🎓</div>
+                    <div class="work-overlay">
+                        <span class="work-category">教育平台</span>
+                        <h3 class="work-title">在线教育系统</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-secondary);">负责技术架构与项目管理，支持直播、录播、互动功能。</p>
+                    </div>
+                </article>
+
+                <article class="work-item">
+                    <div class="work-image">🏥</div>
+                    <div class="work-overlay">
+                        <span class="work-category">医疗系统</span>
+                        <h3 class="work-title">智慧医疗平台</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-secondary);">协调设计、前端、后端团队，打造医患互动平台。</p>
+                    </div>
+                </article>
+
+                <article class="work-item">
+                    <div class="work-image">🤖</div>
+                    <div class="work-overlay">
+                        <span class="work-category">AI应用</span>
+                        <h3 class="work-title">智能客服系统</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-secondary);">整合GPT技术，设计并实现企业智能客服解决方案。</p>
+                    </div>
+                </article>
+
+                <article class="work-item">
+                    <div class="work-image">🌐</div>
+                    <div class="work-overlay">
+                        <span class="work-category">开源项目</span>
+                        <h3 class="work-title">React组件库</h3>
+                        <p style="font-size: 0.9rem; color: var(--text-secondary);">开源的企业级UI组件库，GitHub Star 2k+。</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© 2024 罗练思 | <a href="../index.html" style="color: var(--accent-primary);">返回团队主页</a></p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('navLinks').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

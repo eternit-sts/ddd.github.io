@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我 | 邵程</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-back">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7"/>
+                </svg>
+                <span>团队主页</span>
+            </a>
+            <a href="index.html" class="nav-member">邵程</a>
+            <div class="mobile-menu-toggle" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="about.html" class="active">关于我</a></li>
+                <li><a href="works.html">作品</a></li>
+                <li><a href="contact.html">联系</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="about-grid">
+            <aside class="about-image">
+                <div class="about-image-placeholder">
+                    💻
+                </div>
+                <div style="margin-top: 2rem; text-align: center;">
+                    <h3 style="margin-bottom: 0.5rem;">邵程</h3>
+                    <p style="color: var(--accent-primary); font-size: 0.9rem;">前端工程师 / 交互开发者</p>
+                    <p style="font-size: 0.875rem; margin-top: 1rem;">坐标：杭州</p>
+                    <a href="../index.html" style="display: inline-block; margin-top: 1.5rem; padding: 0.5rem 1rem; border: 1px solid var(--accent-primary); color: var(--accent-primary); border-radius: 20px; font-size: 0.875rem; text-decoration: none;">← 返回团队主页</a>
+                </div>
+            </aside>
+
+            <div>
+                <section style="margin-bottom: 4rem;">
+                    <span class="section-label">About Me</span>
+                    <h2 style="margin-bottom: 1.5rem;">经历与故事</h2>
+                    <p style="margin-bottom: 1.5rem;">
+                        我是一名对代码有洁癖的前端工程师。从第一次用CSS画出圆角边框开始，我就爱上了前端开发。看着设计稿在自己手中变成鲜活的页面，那种成就感无与伦比。
+                    </p>
+                    <p>
+                        我相信前端不只是写代码，更是关于用户体验的每一个细节。从首屏加载速度到按钮的点击反馈，每个细节都值得用心打磨。
+                    </p>
+                </section>
+
+                <section style="margin-bottom: 4rem;">
+                    <span class="section-label">Timeline</span>
+                    <h3 style="margin-bottom: 2rem;">职业历程</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">2022 - 至今</div>
+                            <h4 style="font-size: 1.25rem; margin-bottom: 0.5rem;">高级前端工程师</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem;">负责核心产品前端架构，推动技术栈升级至React 18。</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2020 - 2022</div>
+                            <h4 style="font-size: 1.25rem; margin-bottom: 0.5rem;">前端开发工程师</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem;">参与电商平台开发，负责商品详情页、购物车等核心模块。</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2019 - 2020</div>
+                            <h4 style="font-size: 1.25rem; margin-bottom: 0.5rem;">初级前端工程师</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem;">从切图仔做起，系统学习HTML/CSS/JS，打下扎实基础。</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-date">2015 - 2019</div>
+                            <h4 style="font-size: 1.25rem; margin-bottom: 0.5rem;">软件工程 · 本科</h4>
+                            <p style="color: var(--text-secondary); font-size: 0.95rem;">系统学习编程基础，毕业设计获得优秀毕业论文奖。</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <span class="section-label">Values</span>
+                    <h3 style="margin-bottom: 2rem;">我的价值观</h3>
+                    <div class="values-grid">
+                        <div class="value-card">
+                            <div class="value-number">01</div>
+                            <h4>细节至上</h4>
+                            <p style="font-size: 0.9rem;">像素级的还原是前端的基本功，1px的偏差也是不可接受的。</p>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-number">02</div>
+                            <h4>性能优先</h4>
+                            <p style="font-size: 0.9rem;">用户体验第一，代码要优雅，但更要快。首屏1秒是我的目标。</p>
+                        </div>
+                        <div class="value-card">
+                            <div class="value-number">03</div>
+                            <h4>持续学习</h4>
+                            <p style="font-size: 0.9rem;">前端技术更新快，保持学习热情，跟进最新技术趋势。</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© 2024 邵程 | <a href="../index.html" style="color: var(--accent-primary);">返回团队主页</a></p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('navLinks').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
